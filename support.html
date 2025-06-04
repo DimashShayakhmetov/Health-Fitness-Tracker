@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Fitness Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="support.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="support.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo text-center">
+        <h1>Health & Fitness Tracker</h1>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid justify-content-center">
+        <ul class="navbar-nav d-flex flex-wrap justify-content-center gap-3">
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="health&fitness.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="personalaccount.html">Personal Account</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="courses.html">Courses & Prices</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="community.html">Community & Forum</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="support.html">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    
+    
+    <main>
+      <div class="container">
+        <h1 id="supportcenter"><i class="fas fa-life-ring"></i> Support center</h1>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion mt-4" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                          How to reset your password?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          Go to the "Personal Account" section and select "Forgot your password?". Follow the instructions.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                          How do I cancel my subscription?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          Go to Profile > Payments > Subscription Management and click Cancel.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                          Why is my progress not being displayed?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          Make sure that you are entering the data correctly and that your internet connection is stable.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-section">
+            <h2>Contact Us</h2>
+            <form class="mt-4" id="supportForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your name</label>
+                    <input type="text" class="form-control" id="name" name="user_name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="user_email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="topic" class="form-label">Theme</label>
+                    <select class="form-select" id="topic" name="topic" required>
+                        <option value="">Choose theme</option>
+                        <option value="account">Account and login</option>
+                        <option value="payment">Payments and subscriptions</option>
+                        <option value="technical">Technical support</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">
+                    <i class="fas fa-paper-plane"></i> Send
+                </button>
+            </form>
+        </div>
+
+        <div class="contact-info-section">
+            <h2><i class="fas fa-headset"></i> Contact information</h2>
+            <p><strong>Support email:</strong> <a href="mailto:dimashshayakhmetov3@gmail.com">dimashshayakhmetov3@gmail.com</a></p>
+            <p><strong>Telegram:</strong> <a href="https://web.telegram.org/k/#@DiMaTyArIk_SCHOOL">@Health&Fitness</a></p>
+            <p><strong>Office hours:</strong> Mon–Fri, 9:00–18:00 (UTC-5)</p>
+        </div>
+    </div>
+
+    </main>
+    
+    <footer>
+        <p><strong>Health & Fitness Tracker</strong></p>
+        <p>📍 Astana, Kazakhstan | 📞 +7 (777) 123-45-67</p>
+        <p>📧 <a href="mailto:dimashshayakhmetov3@gmail.com">dimashshayakhmetov3@gmail.com</a></p>
+        <p>🔗 <a href="https://www.instagram.com/roadtothedream?igsh=MWRpYXJ1eWY5eHltag==">Instagram</a> | <a href="https://web.telegram.org/k/#@DiMaTyArIk_SCHOOL">Telegram</a> | <a href="https://www.facebook.com/sportsonfb/">Facebook</a></p>
+        <p>© 2025 Health & Fitness Tracker. All rights reserved.</p>
+    </footer>   
+</body>
+</html>

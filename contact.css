@@ -1,0 +1,279 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.pixabay.com/photo/2016/02/15/11/43/running-track-1201014_1280.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    margin-top: 20px;
+    padding-bottom: 1px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+main {
+    flex-grow: 1;
+    padding-bottom: 50px;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#contact-hero {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.contact-hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #00ffff;
+}
+
+.contact-card {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 5;
+    border: none;
+}
+
+.contact-card:hover {
+    background: rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+}
+
+.contact-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #00ffff;
+}
+
+.contact-card a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.chat-modal {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.chat-modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.close-chat {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.close-chat:hover {
+    color: #f1f1f1;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 12px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.chat-footer {
+    padding: 8px;
+    display: flex;
+    border-top: 1px solid #ddd;
+    background-color: white;
+}
+
+.chat-footer input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.chat-footer button {
+    padding: 8px 12px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.chat-footer button:hover {
+    background-color: #1a252f;
+}
+
+.message {
+    margin-bottom: 12px;
+    max-width: 80%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    position: relative;
+    color: #333;
+    font-size: 14px;
+}
+
+.user-message {
+    background-color: #e3f2fd;
+    margin-left: auto;
+    border-bottom-right-radius: 0;
+}
+
+.manager-message {
+    background-color: #f1f1f1;
+    margin-right: auto;
+    border-bottom-left-radius: 0;
+}
+
+.message p {
+    margin: 0;
+    color: #333;
+}
+
+.message-time {
+    display: block;
+    font-size: 11px;
+    color: #666;
+    text-align: right;
+    margin-top: 4px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media(max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 15px 0;
+    }
+}
+
+@media(max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 15px 0;
+    }
+}

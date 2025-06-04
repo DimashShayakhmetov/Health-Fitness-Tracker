@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.pixabay.com/photo/2016/02/15/11/43/running-track-1201014_1280.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+main {
+    flex-grow: 1;
+    padding-bottom: 50px;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media(max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 15px 0;
+    }
+}
+
+@media(max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 15px 0;
+    }
+}

@@ -1,0 +1,167 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.pixabay.com/photo/2016/02/15/11/43/running-track-1201014_1280.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    text-align: center;
+}
+.nav-link:hover{
+    color: #ffcc00 !important;
+}
+
+
+main {
+    flex-grow: 1;
+    padding-bottom: 50px;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#admin-panel {
+    display: none;
+}
+
+
+
+
+
+.container {
+    margin-top: 20px;
+    padding-bottom: 1px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+
+.card-custom {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.card-title a{
+    color: #00ffcc;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.section-divider {
+    height: 3px;
+    background: #00ffcc;
+    width: 80px;
+    margin: 30px auto;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+
+.courses-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(20, 20, 20, 0.8); 
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(20, 20, 20, 0.8);
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.table th {
+    background: rgba(50, 50, 50, 0.9);
+}
+

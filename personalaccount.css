@@ -1,0 +1,172 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.pixabay.com/photo/2016/02/15/11/43/running-track-1201014_1280.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+main {
+    flex-grow: 1;
+    padding-bottom: 50px;
+}
+
+.auth-container {
+    max-width: 500px;
+    margin: 80px auto;
+    background: #2a2a3d;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+    overflow: hidden;
+    padding: 35px 30px;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+    color: #f8f9fa;
+    font-weight: 600;
+    text-align: center;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 10px 0;
+    border: 1px solid #555;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #3a3a4d;
+    color: #fff;
+}
+
+.auth-form input:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #00bcd4, #00acc1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.auth-form button:hover {
+    background: linear-gradient(to right, #00acc1, #0097a7);
+}
+
+.form-switch {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.form-switch a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 6px;
+}
+
+.form-switch a:hover {
+    text-decoration: underline;
+}
+
+#register-form {
+    display: none;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media(max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 15px 0;
+    }
+}
+
+@media(max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    footer {
+        padding: 15px 0;
+    }
+}
